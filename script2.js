@@ -1,5 +1,5 @@
    
-      let azerty = -8;
+      let azerty = 52;
       if(azerty > 0 && azerty < 40) { 
         console.log('azerty est au rouge');
       } else if (azerty >40 && azerty < 60) { 
