@@ -1,0 +1,292 @@
+lien de formation
+Git & GitHub travail à distance-[03]
+https://www.youtube.com/watch?v=Z_g37YOGtwE
+Git & GitHub travail à distance-[04]
+https://www.youtube.com/watch?v=XfhRjA20OkI
+================================================
+Microsoft Windows [version 10.0.22621.1848]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\HP>cd Desktop && mkdir projetGit
+
+C:\Users\HP\Desktop>cd projetGit
+
+C:\Users\HP\Desktop\projetGit>copy NUL index.html
+        1 fichier(s) copié(s).
+
+C:\Users\HP\Desktop\projetGit>git init
+Initialized empty Git repository in C:/Users/HP/Desktop/projetGit/.git/
+
+C:\Users\HP\Desktop\projetGit>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\HP\Desktop\projetGit>start index.html
+
+C:\Users\HP\Desktop\projetGit>git add index.html
+
+C:\Users\HP\Desktop\projetGit>git add .
+
+C:\Users\HP\Desktop\projetGit>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+
+C:\Users\HP\Desktop\projetGit>git commit -m "version0"
+[master (root-commit) e9d1bd4] version0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+C:\Users\HP\Desktop\projetGit>git log
+commit e9d1bd48079e8d1ed1bf87c0a4043eb71945b4ce (HEAD -> master)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 22:33:20 2023 +0000
+
+    version0
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CONNEXION AU GITHUB 
+
+C:\Users\HP\Desktop\projetGit>
+git remote add origin https://github.com/Bawanani/projetGit.git
+git push -u origin0 main
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+UTILISATION DE GIT BASH POUR SE CONNECTER AU GITHUB
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ pwd
+/c/Users/HP/Desktop/projetGit
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ git remote add origin https://github.com/Bawanani/projetGit.git
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 206 bytes | 206.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Bawanani/projetGit.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+LISTER  DES BRANCHES par cmd: git branch 
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ git branch
+* master
+
+CREER LA BRANCHE motok-branch
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ git branch motok-branch
+
+SE DEPLACER SUR LA BRANCHE motok-branch
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ git checkout motok-branch
+Switched to branch 'motok-branch'
+
+VERIFIER LE STATUS
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git status
+On branch motok-branch
+nothing to commit, working tree clean
+
+OUVERTURE DU FICHIER DANS CODE
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ code index.html
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git status
+On branch motok-branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git add .
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git status
+On branch motok-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git commit -m "version 1"
+[motok-branch 430b9ef] version 1
+ 1 file changed, 11 insertions(+)
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git log
+commit 430b9ef1532ee9c39130d77d4944c4c75ff1529b (HEAD -> motok-branch)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 23:35:08 2023 +0000
+
+    version 1
+
+commit e9d1bd48079e8d1ed1bf87c0a4043eb71945b4ce (origin/master, master)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 22:33:20 2023 +0000
+
+    version0
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ git log
+commit e9d1bd48079e8d1ed1bf87c0a4043eb71945b4ce (HEAD -> master, origin/master)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 22:33:20 2023 +0000
+
+    version0
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ code index.html
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (master)
+$ git checkout motok-branch
+Switched to branch 'motok-branch'
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git status
+On branch motok-branch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git add .
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git status
+On branch motok-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git log
+commit 430b9ef1532ee9c39130d77d4944c4c75ff1529b (HEAD -> motok-branch)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 23:35:08 2023 +0000
+
+    version 1
+
+commit e9d1bd48079e8d1ed1bf87c0a4043eb71945b4ce (origin/master, master)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 22:33:20 2023 +0000
+
+    version0
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git commit -m "version 2"
+[motok-branch 4959352] version 2
+ 1 file changed, 1 insertion(+)
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git log
+commit 4959352183460332bd83ff7cb7c82cd5f0403a56 (HEAD -> motok-branch)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 23:59:15 2023 +0000
+
+    version 2
+
+commit 430b9ef1532ee9c39130d77d4944c4c75ff1529b
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 23:35:08 2023 +0000
+
+    version 1
+
+commit e9d1bd48079e8d1ed1bf87c0a4043eb71945b4ce (origin/master, master)
+Author: Bawanani <bawanani@gmail.com>
+Date:   Tue Jun 27 22:33:20 2023 +0000
+
+    version0
+=================================================================
+RETOUR A une version en selectionnant copier une première portion du code de version
+==================================================================================
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git checkout 430b9ef15
+Note: switching to '430b9ef15'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 430b9ef version 1
+===============================================================
+REVENIR A LA BRANCH motok-branch
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit ((4959352...))
+$ git checkout motok-branch
+Switched to branch 'motok-branch'
+
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git status
+On branch motok-branch
+nothing to commit, working tree clean
+
+==============================================================
+ENVOIE DE VERSION SUR LA BRANCH motok-branch sur GITHUB
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$ git push origin motok-branch
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 637 bytes | 637.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Bawanani/projetGit.git
+   e9d1bd4..4959352  motok-branch -> motok-branch
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+copier pour COMMENCER DES MODIFICATION A TRAVERS LE TRAIVAIL D'UNE AUTRE BRANCH
+HP@DESKTOP-J71G1A4 MINGW64 ~/Desktop/projetGit (motok-branch)
+$git pull origin <<nom de Cette branch>>
+======================================================================
+Envoie de la copie sur ma branch avec la ;cmd:
+git push origin <<nom de MA branch>>
+
+creer un fichier CSS dans bach
+touch style.css
+ pour voir les fichiers disponibles 
+ls
+ fusionner les modifications d'une branch quelconque sur le marter
+git merge "nom de la branch"
+
+envoie en ligne vers github
+git push origin master
+
