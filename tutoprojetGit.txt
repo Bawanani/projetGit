@@ -57,10 +57,6 @@ Date:   Tue Jun 27 22:33:20 2023 +0000
     version0
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 CONNEXION AU GITHUB 
-
-C:\Users\HP\Desktop\projetGit>
-git remote add origin https://github.com/Bawanani/projetGit.git
-git push -u origin0 main
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 UTILISATION DE GIT BASH POUR SE CONNECTER AU GITHUB
 

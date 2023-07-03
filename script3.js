@@ -18,11 +18,12 @@ alert(Result);*/
 /*EXERCE 0: A l'aide de la fonction prompt(). Insérer dans la page HTML
  la chaine de caractères inscrites dans la boite de dialogue.*/
 //REPONSE:
- let test = prompt("Merci d'inscrire une chaine de caractères ?");
-document.body.innerHTML = test;
+ /*let test = prompt("Merci d'inscrire une chaine de caractères ?");
+document.body.innerHTML = test;*/
 
 //EXEXERCICE 1
-//Créer une variable result qui contient la somme des variables a et b. Afficher le résultat de la somme dans une boite de dialogue.
+//Créer une variable result qui contient la somme des variables a et b. 
+//Afficher le résultat de la somme dans une boite de dialogue.
 //REPONSE:
 /*let a = 42;
 let b = 7569;
@@ -36,11 +37,15 @@ alert(result);*/
 let note_maths = 11;
 let note_francais = 9;
 let note_hg = 16;
-let ??? = ???;
-alert('La moyenne est de ' + ???);*/
-
-//EXERCICE 3
-//Déclarer une variable budget qui contient le budget de votre choix. Déclarer une variable achats qui contient le montant de votre choix. Afficher si le budget permet de payer les achats.
+let moy = (note_maths + note_francais + note_hg)/3;
+alert('La moyenne est de ' + moy);
+document.body.innerHTML=('La moyenne est de ' + moy);
+*/
+/*EXERCICE 3
+//Déclarer une variable budget qui contient le budget de votre choix. 
+Déclarer une variable achats qui contient le montant de votre choix. 
+Afficher si le budget permet de payer les achats.
+*/
 //REPONSE:
 /*let budget = 1553.89;
 let achats = 1554.76;
@@ -51,14 +56,17 @@ if(budget >= achats) {
 }*/
 
 //EXERCICE 4 - PRIX HT > TTC, LEVEL 1
-//A l'aide de la fonction prompt(), demander un prix HT à l'utilisateur puis insérer le prix TTC (TVA 20 %) dans la page HTML à l'aide de document.body.innerText.
+//A l'aide de la fonction prompt(), demander un prix HT à l'utilisateur 
+//puis insérer le prix TTC (TVA 20 %) dans la page HTML à l'aide de document.body.innerText.
+
 //REPONSE:
 /*let ht = prompt("Montant HT ?");
 let ttc = ht * 1.2;
 document.body.innerText = ttc;*/
 
 //EXERCICE 5 - PRIX HT > TTC, LEVEL 2
-//A l'aide de la fonction prompt(), demander un prix HT puis un taux de la TVA à l'utilisateur puis insérer le prix TTC dans la page HTML à l'aide de document.body.innerText.
+//A l'aide de la fonction prompt(), demander un prix HT puis un taux de la TVA à l'utilisateur 
+//puis insérer le prix TTC dans la page HTML à l'aide de document.body.innerText.
 //REPONSE:
 /*let ht = prompt("Montant HT ?");
 let taux_tva = prompt("Taux de TVA ?");
@@ -68,12 +76,15 @@ document.body.innerText = ttc;
 */
 
 //EXERCICE 6 - PRIX HT > TTC, LEVEL 3
-//A l'aide de la fonction prompt(), demander un prix HT puis un taux de la TVA à l'utilisateur puis insérer le prix TTC dans la page HTML à l'aide de document.body.innerHTML. Si le prix TTC est strictement supérieur à 100 on affichera le prix en rouge sinon en vert. Pour simplifier on utilisera les bouts de code suivants sur l'élément HTML de votre choix :
+//A l'aide de la fonction prompt(), demander un prix HT puis un taux de la TVA à l'utilisateur 
+//puis insérer le prix TTC dans la page HTML à l'aide de document.body.innerHTML. 
+//Si le prix TTC est strictement supérieur à 100 on affichera le prix en rouge sinon en vert.
+// Pour simplifier on utilisera les bouts de code suivants sur l'élément HTML de votre choix :
 //REPONSE:
-/*Ro-uge : style="color: red;"
-Vert : style="color: green;"
-Par exemple : <h1 style="color: red;">...</h1>
-
+//Rouge : style="color: red;"
+//Vert : style="color: green;"
+//Par exemple : <h1 style="color: red;">...</h1>
+/*
 let ht = prompt("Montant HT ?");
 let taux_tva = prompt("Taux de TVA ?");
 let ttc = ht * (taux_tva / 100) + 1;
@@ -85,7 +96,8 @@ if(ttc > 100) {
 */
 
 //EXERCICE 7
-//A partir de la page HTML suivante, remplacer le contenu de l'élément HTML #cocktail par Long Island Iced Tea à l'aide d'un script JS.
+//A partir de la page HTML suivante, remplacer le contenu de l'élément HTML #cocktail
+// par Long Island Iced Tea à l'aide d'un script JS.
 //REPONSE:
 /*HTML
 <body>
@@ -101,13 +113,16 @@ if(ttc > 100) {
 //EXERCICE 8
 //Grâce à la boucle de votre choix, afficher en console tous les multiples de 10 jusqu'à 1000.
 //REPONSE:
-/*for(let i = 10;i <= 1000;i+=10) {
+/*
+for(let i = 10;i <= 1000;i+=10) {
    console.log(i);
 }
 */
 
 //EXERCICE 9
-//Grâce à la fonction prompt(), demander l'âge de l'utilisateur, puis à l'aide d'une condition, déterminer et afficher via une boite de dialogue si l'utilisateur est mineur ou majeur. Pour cet exercice on considère qu'un individu est majeur à partir de 18 ans.
+//Grâce à la fonction prompt(), demander l'âge de l'utilisateur, puis à l'aide d'une condition, déterminer
+// et afficher via une boite de dialogue si l'utilisateur est mineur ou majeur. Pour cet exercice
+// on considère qu'un individu est majeur à partir de 18 ans.
 //REPONSE:
 /*let age = prompt("Quel est votre âge ?");
 if(age >= 18) {
@@ -118,7 +133,8 @@ if(age >= 18) {
 */
 
 //EXERCICE 10
-//En utilisant la boucle while(), afficher dans la console tous les codes postaux possibles pour le département 77.
+//En utilisant la boucle while(), afficher dans la console tous les codes postaux 
+//possibles pour le département 77.
 //REPONSE:
 /*let cp = 77000;
 while(cp <= 77999) {
