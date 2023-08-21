@@ -1,0 +1,5 @@
+Sys.setenv(baseurl="http://localhost:8080/")
+Sys.setenv(username="admin")
+Sys.setenv(password="district")
+Sys.setenv(;cleanup_views=FALSE)
+Sys.setenv(dhis2"_checks = TRUE)

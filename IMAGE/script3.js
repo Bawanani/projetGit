@@ -152,7 +152,7 @@ for(let i = 1;i <= 10;i++) {
    html = html + n + ' x ' + i + ' = ' + (n * i) + ' <br />';
 }
 document.body.innerHTML = html;
-*/
+
 
 //EXERCICE 12
 //En utilisant deux boucles for, écrire un script qui produit le résultat ci-dessous, dans la page HTML.
@@ -175,24 +175,26 @@ document.body.innerHTML = html;
 */
 
 //EXERCICE 13
-/*Déclarer une variable avec le nom de votre choix et avec la valeur 0. Tant que cette variable n'atteint pas 20, il faut :
+/*Déclarer une variable avec le nom de votre choix et avec la valeur 0. Tant que 
+cette variable n'atteint pas 20, il faut :
 l'afficher dans la page HTML;
 incrémenter sa valeur de 2 ;*/
-//REPONSE:
-/*let html = '';
-let k = 0;
 
+/*REPONSE:
+let html = '';
+let k = 0;
 while(k <= 20) {
    html = html + k + '<br />';
    k = k + 2;
 }
 document.body.innerHTML = html;
 */
-
-//EXERCICE 14 - TABLEAU, LEVEL 1
-//Construire un tableau HTML, sans en-tête, avec X lignes et avec Y colonnes dans un élément <table>. Ajouter dans les celulles un contenu aléatoire de votre choix. Enfin, placer ce tableau dans la page HTML.
+/*EXERCICE 14 - TABLEAU, LEVEL 1
+//Construire un tableau HTML, sans en-tête, avec X lignes et avec Y colonnes
+ //dans un élément <table>. Ajouter dans les celulles un contenu aléatoire de votre choix.
+ // Enfin, placer ce tableau dans la page HTML.
 //REPONSE:
-/*let tableau = '<table>';
+let tableau = '<table>';
 let lignes = 5;
 let colonnes = 3;
 
@@ -205,7 +207,7 @@ for(let i = 1;i <= lignes;i++) {
 }
 tableau = tableau + '</table>';
 document.body.innerHTML = tableau;
-*/
+
 
 //EXERCICE 15 - TABLEAU, LEVEL 2
 //Avec le code de l'exercice précédent (14) demander via la fonction prompt(), X lignes et Y colonnes puis constuire le tableau HTML et l'insérer dans la page HTML.
@@ -314,3 +316,15 @@ for(let i = 1;i <= nalea;i++) {
 }
 document.body.innerHTML = html;
 */
+const person= {
+Nom:'Anani',
+Prenom:'Bawa',
+Age:25,
+address: {
+   ville:'kara',
+   quartier:'Ateda',
+   BP:2578
+}
+}
+const {Nom, Age, address:{ville}}= person
+console.log('Mon Nom est '+Nom+' j\'ai '+ Age+' ans et j\' habite la ville de '+ ville);

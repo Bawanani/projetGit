@@ -1,0 +1,98 @@
+
+.subscribe-btn {
+   background-color:rgb(200, 0, 0); 
+   color:white;
+   border: none;
+   border-radius: 5px;
+   height: 33px;
+   width: 100px;
+   cursor: pointer;
+   margin-left: 0px;
+}
+.subscribe-btn:hover{
+    opacity: 0.3;
+}
+.subscribe-btn:active{
+    opacity: 0.5;
+}
+
+.join-btn {
+    background-color:rgb(255,255,255); 
+    color:black;
+    border-color: blue;
+    border-radius: 5px;
+    height: 33px; /* on pouvais mieux remplacer heigth par "padding-right"*/
+    width: 80px;  /* on pouvais mieux remplacer width par "padding-left"*/
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 0.5s;
+ }
+
+.join-btn:hover{
+   background-color: blue;
+   color: white;
+}
+.join-btn:active{
+    opacity: 0.5;
+}
+
+ 
+.tweet-btn {
+    background-color:rgb(2, 158, 255); 
+    color:white;
+    border:none;
+    border-radius: 18px;
+    height: 36px;
+    width: 80px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-weight:bold;
+    font-size:16px;
+    transition: box-shadow 0.15s;
+ }
+.tweet-btn:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.tweet-btn:active{
+    opacity: 0.5;
+}
+
+
+a{
+   color:rgb(0,113,133);
+   font-weight:bold;
+   font-size:16px;
+}
+    
+ .preview1{
+   width: 700px;
+   margin-top: 20px;
+   margin-left: 50px;
+   display: inline-block;
+ }
+
+ .preview2{
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: top;
+ }
+ .search-1{
+   /* width: 200px;*/
+   display: block;
+   border-radius: 18px;
+    font-size: 20px;
+    margin-left: 400px;
+    }
+
+     .titre{
+        width: 300px;
+     }
+     .subscribe-btn,.join-btn, .tweet-btn{
+        display: inline-block;
+    }
+/*
+    .div-img1, .div-img2{
+        display:inline-block;
+    }*/
